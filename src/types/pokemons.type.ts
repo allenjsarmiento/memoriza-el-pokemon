@@ -18,3 +18,8 @@ export interface PokemonGame{
     id:number;
     idUnique: PokemonID 
 }
+
+export interface PokemonGameInit {
+    limit?:number,
+    numPokemons?:number
+}

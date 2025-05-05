@@ -1,20 +1,27 @@
 
 import { UuidAdapter } from "@/adapters/UuidAdapter"
 import { fetchPokemons } from "@/services/pokemonService"
-import type { PokemonGame, PokemonResponse,  } from "@/types/pokemons.type"
+import type { PokemonGame, PokemonGameInit, PokemonResponse,  } from "@/types/pokemons.type"
 import { ref } from "vue"
 
 const uuid = new UuidAdapter() 
+
+const pokemonGameInitDefault:PokemonGameInit = {
+    limit:50,
+    numPokemons:6
+}
 
 const usePokemons = () => {
 
     const pokemons= ref<PokemonGame[]>([])
 
-    const getPokemons = async (limit=50) => {	
+    const getPokemons = async (pokemonGameInit:PokemonGameInit=pokemonGameInitDefault) => {	
 
-        const data:PokemonResponse = await fetchPokemons(limit)
+        const data:PokemonResponse = await fetchPokemons(pokemonGameInit.limit!)
 
-        const idsRandom = Array.from({length: limit}, (_, i) => i + 1).sort( ()=>Math.random() - 0.5).slice(0,6)
+        const idsRandom = Array.from({length: pokemonGameInit.limit!}, (_, i) => i + 1)
+            .sort( ()=>Math.random() - 0.5)
+            .slice(0,pokemonGameInit.numPokemons)
       
 
         if(data.results){
