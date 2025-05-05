@@ -1,6 +1,6 @@
 <template>
   <h1 class="text-6xl font-extrabold text-center text-black drop-shadow-md mt-3">
-    ¡Adivina el Pokémon!
+    ¡Memoriza el Pokémon!
     <span class="block text-3xl  mt-3 mb-5 font-normal">
       Encuentra las parejas y demuestra tu memoria
     </span>
