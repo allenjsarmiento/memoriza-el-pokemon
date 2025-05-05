@@ -1,33 +1,32 @@
-# memoriza-cards
+# 🧠 Memoriza el Pokémon
 
-This template should help get you started developing with Vue 3 in Vite.
+¡Pon a prueba tu memoria con este divertido juego donde tendrás que emparejar correctamente los Pokémon escondidos!  
+Encuentra todas las parejas lo más rápido posible.
 
-## Recommended IDE Setup
+---
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 🚀 Instalación
 
-## Type Support for `.vue` Imports in TS
+Sigue estos pasos para ejecutar el proyecto en tu entorno local:
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
 
-## Customize configuration
+## Pasos para la instalación
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+### 1. Clona el proyecto
+```sh
+git clone https://github.com/allenjsarmiento/memoriza-el-pokemon.git
+```
 
-## Project Setup
+### 2. Instala las dependencias
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+
+### 3.  Inicia el servidor de desarrollo
 
 ```sh
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
